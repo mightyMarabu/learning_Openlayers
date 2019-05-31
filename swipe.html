@@ -46,6 +46,7 @@
       });
 
       var map = new ol.Map({
+        controls: ol.control.defaults({zoom: true}),
         layers: [osm, electroHH],
         target: 'map',
         view: new ol.View({
